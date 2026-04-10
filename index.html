@@ -381,7 +381,7 @@
       position: relative;
       min-height: 100svh;
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       justify-content: center;
       overflow: hidden;
     }
@@ -401,9 +401,10 @@
       inset: 0;
       background: linear-gradient(
         to bottom,
-        rgba(9,24,41,0.80) 0%,
-        rgba(9,24,41,0.60) 50%,
-        rgba(9,24,41,0.78) 100%
+        rgba(9,24,41,0.1) 0%,
+        rgba(9,24,41,0.2) 30%,
+        rgba(9,24,41,0.7) 55%,
+        rgba(9,24,41,0.92) 80%
       );
     }
 
@@ -412,7 +413,7 @@
       z-index: 1;
       text-align: center;
       max-width: 780px;
-      padding: 120px 24px 80px;
+      padding: 0 24px 40px;
     }
 
     .hero-eyebrow {
@@ -791,11 +792,11 @@
     }
 
     .trust-strip-inner {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(4, auto);
       align-items: center;
       justify-content: center;
       gap: 0;
-      flex-wrap: wrap;
     }
 
     .trust-badge {
@@ -1161,6 +1162,11 @@
       z-index: 998;
       background: var(--amber);
       padding: 0;
+      transform: translateY(100%);
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    #sticky-call.visible {
+      transform: translateY(0);
     }
 
     #sticky-call a {
@@ -1241,12 +1247,17 @@
 
       /* Hero */
       .hero-bg {
-        background-image: url('assets/hero-mobile.jpg');
         background-position: center top;
+        background-size: cover;
+      }
+      .hero-overlay {
+        background: linear-gradient(to bottom, rgba(9,24,41,0.05) 0%, rgba(9,24,41,0.15) 20%, rgba(9,24,41,0.75) 45%, rgba(9,24,41,0.95) 70%) !important;
       }
       .hero-content {
-        padding: 100px 24px 100px;
+        padding: 0 20px 30px;
       }
+      .hero-h1 { font-size: clamp(2rem, 10vw, 2.75rem); }
+      .hero-sub { font-size: 0.95rem; }
 
       .hero-btns .btn {
         padding: 13px 22px;
@@ -1968,13 +1979,23 @@
        SCRIPTS
   ============================================================ -->
   <script>
-    // ── Navbar scroll behavior ──────────────────────────────────
+    // ── Navbar scroll + sticky call ──────────────────────────────
     const navbar = document.getElementById('navbar');
+    const stickyCall = document.getElementById('sticky-call');
+    const heroEl = document.getElementById('hero');
+    const heroH = heroEl ? heroEl.offsetHeight : 600;
     function handleScroll() {
       if (window.scrollY > 40) {
         navbar.classList.add('scrolled');
       } else {
         navbar.classList.remove('scrolled');
+      }
+      if (stickyCall) {
+        if (window.scrollY > heroH * 0.6) {
+          stickyCall.classList.add('visible');
+        } else {
+          stickyCall.classList.remove('visible');
+        }
       }
     }
     window.addEventListener('scroll', handleScroll, { passive: true });
