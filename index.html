@@ -1359,8 +1359,8 @@
     ============================================================ */
     .fade-up {
       opacity: 0;
-      transform: translateY(28px);
-      transition: opacity 0.55s ease, transform 0.55s ease;
+      transform: translateY(18px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
     }
 
     .fade-up.visible {
@@ -1368,11 +1368,19 @@
       transform: translateY(0);
     }
 
-    .fade-up-delay-1 { transition-delay: 0.1s; }
-    .fade-up-delay-2 { transition-delay: 0.2s; }
-    .fade-up-delay-3 { transition-delay: 0.3s; }
-    .fade-up-delay-4 { transition-delay: 0.4s; }
-    .fade-up-delay-5 { transition-delay: 0.5s; }
+    .fade-up-delay-1 { transition-delay: 0.06s; }
+    .fade-up-delay-2 { transition-delay: 0.12s; }
+    .fade-up-delay-3 { transition-delay: 0.18s; }
+    .fade-up-delay-4 { transition-delay: 0.24s; }
+    .fade-up-delay-5 { transition-delay: 0.30s; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .fade-up {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+    }
   </style>
 </head>
 <body>
@@ -1445,7 +1453,7 @@
         <div class="trust-bar" role="list">
           <div class="trust-item" role="listitem">
             <span class="trust-star" aria-hidden="true">&#9733;</span>
-            <span>4.3&#9733; Google</span>
+            <span>4.3 Google</span>
           </div>
           <div class="trust-item" role="listitem">80 Years in Business</div>
           <div class="trust-item" role="listitem">24/7 Emergency Service</div>
@@ -2006,7 +2014,7 @@
             observer.unobserve(entry.target);
           }
         });
-      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      }, { threshold: 0.08, rootMargin: '0px 0px 40px 0px' });
 
       fadeEls.forEach(function(el) {
         observer.observe(el);
