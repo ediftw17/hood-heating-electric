@@ -1,0 +1,31 @@
+{
+  "business_name": "Hood Heating Air Plumbing & Electric",
+  "slug": "hood-heating-electric",
+  "website_url": "https://hhape.com/",
+  "phone": "(785) 243-1489",
+  "address": "2201 E 6th St, Concordia, KS 66901",
+  "hours": "24/7 emergency service available",
+  "niche": "hvac",
+  "category": "HVAC / Plumbing / Electrical",
+  "services": [
+    "Heating & Furnace Repair",
+    "Air Conditioning",
+    "Plumbing",
+    "Electrical Services",
+    "Commercial Refrigeration",
+    "New Construction & Remodeling"
+  ],
+  "owner": "John Hood",
+  "founded": "1946",
+  "rating": 4.3,
+  "reviews": 52,
+  "city": "Concordia",
+  "state": "KS",
+  "population": 13000,
+  "build_date": "2026-04-10",
+  "niche_profile_path": "projects/website-building-agency/niches/hvac.md",
+  "auditor_path": "projects/website-building-agency/auditors/",
+  "scoring_rubric_path": "projects/website-building-agency/auditors/_scoring-rubric.md",
+  "rebuild_reason": "Site last updated April 2021. Uses jQuery, Revolution Slider (2015-2018 era), outdated Elementor patterns. Strong business fundamentals: 80-year history, A+ BBB, 4.3★/52 reviews, 24/7 service. No franchise — 100% local independent.",
+  "aesthetic_notes": "Established, trustworthy, blue-collar expertise. 80 years in Concordia. Family-owned. Should feel like the most reliable business in town."
+}

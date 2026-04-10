@@ -1,0 +1,35 @@
+{
+  "business": "Hood Heating Air Plumbing & Electric",
+  "aggregate_rating": 4.3,
+  "total_reviews": 61,
+  "sources": ["Google", "Facebook", "Birdeye"],
+  "reviews": [
+    { "text": "Good service! Whether it's commercial or residential they always treat us great!", "source": "Facebook", "stars": 5, "reviewer": "Nathan" },
+    { "text": "John, Luke and their staff always get us taken care of in a timely manner!", "source": "Facebook", "stars": 5, "reviewer": "Amanda P." },
+    { "text": "Russ fixed our wiring quickly and gave good advice on the remodel!", "source": "Facebook", "stars": 5, "reviewer": "Suzie" },
+    { "text": "Very happy with water heater service. They were on time, quick, and left minimal mess.", "source": "Facebook", "stars": 5, "reviewer": "Theodore N." },
+    { "text": "Bryan performed thorough diagnostics and fixed our furnace quickly. Highly recommend!", "source": "Facebook", "stars": 5, "reviewer": "Lacey" },
+    { "text": "Very responsive, professional and efficient. Would highly recommend them.", "source": "Google", "stars": 5, "reviewer": "Local Business Owner" }
+  ],
+  "themes": [
+    "on time / timely response",
+    "family-owned and operated",
+    "professional and courteous staff",
+    "fast repairs / minimal mess",
+    "trusted for generations",
+    "commercial and residential",
+    "one call for all services"
+  ],
+  "hero_copy_candidates": [
+    "One Call Covers It All — Since 1946",
+    "Concordia's Most Trusted Home Services, Four Generations Running",
+    "Always On Time. Always Done Right.",
+    "Heating, Cooling, Plumbing & Electric — One Team, One Call",
+    "80 Years of Keeping Concordia Comfortable",
+    "Get Us Taken Care of in a Timely Manner",
+    "Professional, Efficient, and Highly Recommended",
+    "They Always Treat Us Great",
+    "North Central Kansas's Hometown HVAC Experts Since 1946",
+    "Fast Repairs. Minimal Mess. Guaranteed Work."
+  ]
+}
